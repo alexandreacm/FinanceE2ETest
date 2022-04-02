@@ -18,7 +18,7 @@ export function Option({
       style={[styles.container, active && styles.active]}
       {...rest}
     >
-      <Text>
+      <Text style={active && styles.active}>
         {title}
       </Text>
     </TouchableOpacity>

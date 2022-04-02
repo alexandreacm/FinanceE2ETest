@@ -10,5 +10,11 @@ export const styles = StyleSheet.create({
   },
   active: {
     backgroundColor: '#FFFFFF',
+    fontSize: 13,
+    fontWeight: 'bold'
+  },
+  text: {
+    fontSize: 13,
+    fontWeight: 'bold'
   }
 });

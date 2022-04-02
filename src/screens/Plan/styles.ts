@@ -8,7 +8,7 @@ export const styles = StyleSheet.create({
   },
   options: {
     width: 200,
-    backgroundColor: '#F7F7F7',
+    backgroundColor: '#CDCDCD',
     flexDirection: 'row',
     justifyContent: 'space-between',
     alignItems: 'center',
