@@ -34,7 +34,6 @@ export function Plan() {
   return (
     <TouchableWithoutFeedback onPress={Keyboard.dismiss} testID="keyboard">
       <View style={styles.container}>
-        
         <Header />
 
         <PlanInfo
