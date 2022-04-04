@@ -43,12 +43,13 @@ export function Plan() {
 
         <View style={styles.options}>
           <Option
+            testID="option-premium"
             title="Premium"
             active={plan.name === 'Premium'}
             onPress={() => handleChangePlan('premium')}
-            testID="option-premium"
           />
           <Option
+            testID="option-basic"
             title="Basic"
             active={plan.name === 'Basic'}
             onPress={() => handleChangePlan('basic')}
@@ -56,8 +57,8 @@ export function Plan() {
         </View>
 
         <Input
-          placeholder="your email"
           testID="input-email"
+          placeholder="your email"
         />
 
         {
@@ -69,9 +70,9 @@ export function Plan() {
         }
 
         <Button
+          testID="button-subscribe"
           title="Subscribe"
           onPress={handleSubscribe}
-          testID="button-subscribe"
         />
 
         <Text style={styles.details} testID="plan-note">

@@ -29,6 +29,6 @@ describe("My first E2E test with detox", () => {
 
     await device.takeScreenshot('snapshot-of-select-premium-plan');
 
-    await expect(element(by.id("plan-note"))).toBeVisible();
+    await expect(element(by.id("confirmation-message"))).toBeVisible();
   });
 });
