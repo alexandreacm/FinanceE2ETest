@@ -18,7 +18,11 @@ describe("My first E2E test with detox", () => {
     //just to test and see our tests with the time
     //new Promise((result) => setTimeout(result, 5000));
 
-    await element(by.id("input-email")).tap();
+    await element(by.id("button-subscribe")).tap();
+    
+    new Promise((result) => setTimeout(result, 4000));
+
+    await element(by.id("input-email")).tap(); //focus
     await element(by.id("input-email")).typeText(
       "alexandreacm.marques@gmail.com"
     );
