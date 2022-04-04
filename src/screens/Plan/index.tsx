@@ -10,24 +10,25 @@ import { PlanInfo, PlanInfoProps } from '../../components/PlanInfo';
 import { styles } from './styles';
 
 export function Plan() {
+  const [email, setEmail] = useState<string>('');
   const [plan, setPlan] = useState<PlanInfoProps>({ name: 'Basic', value: '5.25' });
   const [emailSent, setEmailSent] = useState(false);
+  const [validateEmail, setValidateEmail] = useState(false);
 
   function handleChangePlan(plan: string) {
-    if (plan === 'basic') {
-      setPlan({
-        name: 'Basic',
-        value: '5.25'
-      });
-    } else {
-      setPlan({
-        name: 'Premium',
-        value: '6.99'
-      });
-    }
+    setPlan({
+      name: plan === 'basic' ? 'Basic' : 'Premium',
+      value: plan === 'basic' ? '5.25' : '6.99'
+    });
   }
 
   function handleSubscribe() {
+    if(email === ''){
+       setValidateEmail(true);
+       setEmailSent(false);
+       return
+    }
+    setValidateEmail(false)
     setEmailSent(true);
   }
 
@@ -59,6 +60,9 @@ export function Plan() {
         <Input
           testID="input-email"
           placeholder="your email"
+          required = {validateEmail}
+          value={email}
+          onChangeText={setEmail}
         />
 
         {

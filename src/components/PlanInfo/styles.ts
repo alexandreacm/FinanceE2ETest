@@ -1,10 +1,12 @@
-import { StyleSheet, Dimensions } from 'react-native';
+import { StyleSheet } from 'react-native';
+
+import { colors } from '../../theme';
 
 export const styles = StyleSheet.create({
   planInfo: {
     width: '100%',
     borderBottomWidth: 1,
-    borderBottomColor: '#E8E8E8',
+    borderBottomColor: colors.CONTAINER_HEADER,
     paddingBottom: 33,
   },
   plan: {
@@ -24,10 +26,10 @@ export const styles = StyleSheet.create({
   },
   recurrence: {
     marginBottom: 7,
-    color: '#585656'
+    color: colors.TEXT_RECURRENCE
   },
   note: {
-    color: '#8C8C8C',
+    color: colors.TEXT_NOTE,
     fontSize: 12
   },
 });

@@ -1,4 +1,5 @@
 import { StyleSheet } from 'react-native';
+import { colors } from '../../theme';
 
 export const styles = StyleSheet.create({
   container: {
@@ -9,7 +10,7 @@ export const styles = StyleSheet.create({
     borderRadius: 5
   },
   active: {
-    backgroundColor: '#FFFFFF',
+    backgroundColor:  colors.WHITE,
     fontSize: 13,
     fontWeight: 'bold'
   }
