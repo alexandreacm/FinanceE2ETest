@@ -19,8 +19,7 @@ describe("My first E2E test with detox", () => {
     //new Promise((result) => setTimeout(result, 5000));
 
     await element(by.id("button-subscribe")).tap();
-    
-    new Promise((result) => setTimeout(result, 4000));
+
 
     await element(by.id("input-email")).tap(); //focus
     await element(by.id("input-email")).typeText(
@@ -31,7 +30,7 @@ describe("My first E2E test with detox", () => {
 
     await element(by.id("button-subscribe")).tap();
 
-    await device.takeScreenshot('snapshot-of-select-premium-plan');
+    //await device.takeScreenshot('snapshot-of-select-premium-plan');
 
     await expect(element(by.id("confirmation-message"))).toBeVisible();
   });
