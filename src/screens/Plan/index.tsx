@@ -9,7 +9,7 @@ import { PlanInfo, PlanInfoProps } from '../../components/PlanInfo';
 
 import { styles } from './styles';
 
-export function Plan() {
+export default function Plan() {
   const [email, setEmail] = useState<string>('');
   const [plan, setPlan] = useState<PlanInfoProps>({ name: 'Basic', value: '5.25' });
   const [emailSent, setEmailSent] = useState(false);
