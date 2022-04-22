@@ -6,6 +6,7 @@ import { styles } from './styles';
 type Props = TouchableOpacityProps & {
   title: string;
 }
+
 export function Button({ title, ...rest }: Props) {
   return (
     <TouchableOpacity

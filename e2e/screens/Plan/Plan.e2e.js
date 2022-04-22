@@ -13,7 +13,7 @@ describe("My first E2E test with detox", () => {
   });
 
   it("Should subscribe premium plan", async () => {
-    await element(by.id("option-premium")).tap();
+    await element(by.id("option-premium")).tap(); //click
 
     //just to test and see our tests with the time
     //new Promise((result) => setTimeout(result, 5000));
@@ -26,12 +26,11 @@ describe("My first E2E test with detox", () => {
       "alexandreacm.marques@gmail.com"
     );
 
-    await element(by.id("keyboard")).tap();
+    await element(by.id("TouchableWithoutKeyboard")).tap(); //click
 
-    await element(by.id("button-subscribe")).tap();
+    await element(by.id("button-subscribe")).tap(); //click
 
     //await device.takeScreenshot('snapshot-of-select-premium-plan');
-
     await expect(element(by.id("confirmation-message"))).toBeVisible();
   });
 });

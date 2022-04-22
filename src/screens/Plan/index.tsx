@@ -33,7 +33,7 @@ export default function Plan() {
   }
 
   return (
-    <TouchableWithoutFeedback onPress={Keyboard.dismiss} testID="keyboard">
+    <TouchableWithoutFeedback testID="TouchableWithoutKeyboard" onPress={Keyboard.dismiss}>
       <View style={styles.container}>
         <Header />
 
