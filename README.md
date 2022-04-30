@@ -17,7 +17,6 @@ An example with simple test cases with @testing-library/react-native, react-test
 - Here must contain the names of everyone in the team, at the moment that
   project is created
   - Developer: Alexandre Marques
-  - Scrum Master: XXXX XXXX
 
 # To Stylization
 
