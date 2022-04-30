@@ -1,5 +1,5 @@
 <h1 align="center">
-  <img alt="Drink Water" height="80" title="Logo" src=".github/logo.png" />
+  <img alt="FinanceE2ETest" height="80" title="logo" src=".github/logo.png" />
 </h1>
 
 <p align="center">
@@ -17,6 +17,7 @@ An example with simple test cases with @testing-library/react-native, react-test
 - Here must contain the names of everyone in the team, at the moment that
   project is created
   - Developer: Alexandre Marques
+  - Scrum Master: XXXX XXXX
 
 # To Stylization
 
