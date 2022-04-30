@@ -1,5 +1,5 @@
 <h1 align="center">
-  <img alt="FinanceE2ETest" height="80" title="logo" src=".github/logo.png" />
+  <img alt="FinanceE2ETest" height="80" title="logo" src=".github/Logo.png" />
 </h1>
 
 <p align="center">
