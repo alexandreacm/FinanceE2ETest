@@ -1,14 +1,15 @@
 import { StyleSheet } from 'react-native';
+import { colors } from '../../theme';
 
 export const styles = StyleSheet.create({
   container: {
     flex: 1,
     padding: 24,
-    backgroundColor: '#FFF'
+    backgroundColor: colors.WHITE
   },
   options: {
     width: 200,
-    backgroundColor: '#CDCDCD',
+    backgroundColor: colors.OPTIONS,
     flexDirection: 'row',
     justifyContent: 'space-between',
     alignItems: 'center',
@@ -19,7 +20,7 @@ export const styles = StyleSheet.create({
     marginTop: 25
   },
   details: {
-    color: '#8C8C8C',
+    color: colors.TEXT_NOTE,
     textAlign: 'center',
     fontSize: 12,
     marginTop: 22
@@ -29,7 +30,7 @@ export const styles = StyleSheet.create({
     fontSize: 16,
     textAlign: 'center',
     marginTop: 12,
-    color: '#0085FF',
+    color: colors.BUTTON,
     marginBottom: 12
   }
 });

@@ -9,7 +9,7 @@ type Props = TextInputProps & {
 
 export function Input({ required ,...rest }: Props) {
   return (
-    <>
+    <View>
       <TextInput
         style={styles.input}
         {...rest}
@@ -21,6 +21,6 @@ export function Input({ required ,...rest }: Props) {
           </View>
            )
         }
-    </>
+    </View>
   );
 }
