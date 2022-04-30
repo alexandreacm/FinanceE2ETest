@@ -44,7 +44,7 @@ project.
 yarn ios or yarn react-native run-ios
 ```
 
-## Running the tests
+## Running jest tests
 
 Use **yarn jest -u** or **yarn test** to execute the jest tests.
 
@@ -57,7 +57,8 @@ yarn jest or yarn test
 Use **yarn detox ** or **detox test** to execute the jest tests.
 
 ```cl
-detox test -c android.emu.debug or yarn detox test -c ios.sim.debug
+yarn detox build -c android.emu.debug or yarn detox build -c ios.sim.debug
+detox test -c android.emu.debug or detox test -c ios.sim.debug
 ```
 
 <br />
