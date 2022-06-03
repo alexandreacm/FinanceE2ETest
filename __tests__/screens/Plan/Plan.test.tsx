@@ -1,15 +1,13 @@
-import React from "react";
-
+import * as React from "react";
 import { create } from "react-test-renderer";
 import { render, fireEvent } from "@testing-library/react-native";
 
-import Plan from "../../../src/screens/Plan";
+import Plan from "../../../App";
 
-describe("should renderer all tests and components", () => {
+describe("renders correctly", () => {
   const tree = create(<Plan />).toJSON();
 
-  it("Should renders correctly with defaults", () => {
+  it("Should renders correctly app component", () => {
     expect(tree).toMatchSnapshot();
   });
-
 });

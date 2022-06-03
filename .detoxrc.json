@@ -18,5 +18,8 @@
         "type": "iPhone 11"
       }
     }
+  },
+  "artifacts": {
+    "rootDir": "./e2e/artifacts"
   }
 }

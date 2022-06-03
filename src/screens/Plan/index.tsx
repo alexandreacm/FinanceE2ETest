@@ -16,10 +16,10 @@ export default function Plan() {
   const [emailSent, setEmailSent] = useState(false);
   const [validateEmail, setValidateEmail] = useState(false);
 
-  function handleChangePlan(plan: string) {
+  function handleChangePlan(name: string) {
     setPlan({
-      name: plan === 'basic' ? 'Basic' : 'Premium',
-      value: plan === 'basic' ? '5.25' : '6.99'
+      name,
+      value: name === 'Basic' ? '5.25' : '6.99'
     });
   }
 
@@ -48,13 +48,13 @@ export default function Plan() {
             testID="option-premium"
             title="Premium"
             active={plan.name === 'Premium'}
-            onPress={() => handleChangePlan('premium')}
+            onPress={() => handleChangePlan('Premium')}
           />
           <Option
             testID="option-basic"
             title="Basic"
             active={plan.name === 'Basic'}
-            onPress={() => handleChangePlan('basic')}
+            onPress={() => handleChangePlan('Basic')}
           />
         </View>
 

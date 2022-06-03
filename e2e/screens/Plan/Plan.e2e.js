@@ -20,7 +20,6 @@ describe("My first E2E test with detox", () => {
 
     await element(by.id("button-subscribe")).tap();
 
-
     await element(by.id("input-email")).tap(); //focus
     await element(by.id("input-email")).typeText(
       "alexandreacm.marques@gmail.com"
@@ -30,7 +29,32 @@ describe("My first E2E test with detox", () => {
 
     await element(by.id("button-subscribe")).tap(); //click
 
-    //await device.takeScreenshot('snapshot-of-select-premium-plan');
+    await device.takeScreenshot("snapshot-of-select-premium-plan");
+
     await expect(element(by.id("confirmation-message"))).toBeVisible();
+  });
+
+  test("Should test email validation", async () => {
+    await element(by.id("option-premium")).tap();
+    await element(by.id("input-email")).tap(); //focus
+
+    await element(by.id("TouchableWithoutKeyboard")).tap(); //close keyboard
+    await element(by.id("button-subscribe")).tap(); //onPress
+
+    const errorEmail = await element(by.text("Email is required"));
+
+    await expect(errorEmail).toBeVisible();
+  });
+
+  test("Should testing if the price is 6.99 for premium account", async () => {
+    await element(by.id("option-premium")).tap();
+    await element(by.id("input-email")).tap(); //focus
+
+    await element(by.id("TouchableWithoutKeyboard")).tap(); //close keyboard
+    await element(by.id("button-subscribe")).tap(); //onPress
+
+    const price = await element(by.text("6.99"));
+
+    await expect(price).toBeVisible();
   });
 });
